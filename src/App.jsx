@@ -1,5 +1,4 @@
 import Play from "./Components/Player";
-import Luka from "./Components/luka";
 
 function App() {
   return (
