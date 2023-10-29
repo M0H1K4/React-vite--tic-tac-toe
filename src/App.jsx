@@ -1,6 +1,5 @@
 import Player from "./components/PLayer";
 
-
 function App() {
   return (
     <main>
