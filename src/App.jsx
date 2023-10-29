@@ -1,4 +1,4 @@
-import Player from "./Player";
+import Play from "./Components/Player";
 import Luka from "./Components/luka";
 
 function App() {
@@ -6,9 +6,8 @@ function App() {
     <main>
       <div id="game-container">
         <ol id="players">
-          <Player name="player 1" symbol="X" />
-          <Player name="player 2" symbol="O" />
-          <Luka />
+          <Play name="player 1" symbol="X" />
+          <Play name="player 2" symbol="O" />
         </ol>
         GAME BOARD
       </div>
