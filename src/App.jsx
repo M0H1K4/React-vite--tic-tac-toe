@@ -18,7 +18,7 @@ function App() {
           <PlayerBig initialName="player 1" symbol="X" isActive={activePlayer === 'X'} />
           <PlayerBig initialName="player 2" symbol="O" isActive={activePlayer === 'O'}  />
         </ol>
-       <GameBoard onSelectSqueare={handleSelectSquare}/>
+       <GameBoard onSelectSqueare={handleSelectSquare} activePlayerSymbol={activePlayer}/>
       </div>
       LOG
     </main>
