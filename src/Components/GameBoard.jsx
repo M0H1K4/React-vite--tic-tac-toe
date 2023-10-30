@@ -7,7 +7,7 @@ const initialGameBoard = [
   [null, null, null],
 ];
 
-export default function GameBoard({ onSelectSqueare, turns }) {
+export default function GameBoard({ onSelectSquare, turns }) {
   let gameBoard = initialGameBoard;
 
   for(const turn of turns) {
@@ -36,7 +36,7 @@ export default function GameBoard({ onSelectSqueare, turns }) {
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
-                <button onClick={ () => onSelectSqueare(rowIndex, colIndex)}>{playerSymbol}</button>
+                <button onClick={ () => onSelectSquare(rowIndex, colIndex)}>{playerSymbol}</button>
               </li>
             ))}
           </ol>
