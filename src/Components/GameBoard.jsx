@@ -1,4 +1,3 @@
-import { Linter } from "eslint";
 import React from "react";
 
 const initialGameBoard = [
@@ -13,7 +12,7 @@ export default function GameBoard() {
       {initialGameBoard.map((row, rowIndex) => (
         <li key={rowIndex}>
           <ol>
-            {row.map(playerSymbol, (colIndex) => (
+            {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
                 <button>{playerSymbol}</button>
               </li>
