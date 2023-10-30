@@ -7,7 +7,7 @@ const initialGameBoard = [
   [null, null, null],
 ];
 
-export default function GameBoard() {
+export default function GameBoard({onSelectSqueare}) {
   const [gameBoard, setGameBoard] = useState(initialGameBoard);
 
   function handleSelectSquare(rowIndex, colIndex) {
@@ -16,6 +16,8 @@ export default function GameBoard() {
       updatedBoard[rowIndex][colIndex] = "X";
       return updatedBoard;
     });
+
+    onSelectSqueare();
   }
 
   return (
