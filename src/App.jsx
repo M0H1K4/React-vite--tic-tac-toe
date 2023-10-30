@@ -2,13 +2,15 @@ import { useState } from "react";
 
 import PlayerBig from "./Components/PlayerBig";
 import GameBoard from "./Components/GameBoard";
+import Log from "./Components/Log";
 
 function App() {
-
+  const [gameTurns, setGameTurns] = useState([]);
   const [activePlayer, setActivePlayer] = useState('X');
 
   function handleSelectSquare(){
     setActivePlayer((curActivePlayer) => curActivePlayer === 'X' ? 'O' : 'X');
+    
   }
 
   return (
@@ -20,7 +22,7 @@ function App() {
         </ol>
        <GameBoard onSelectSqueare={handleSelectSquare} activePlayerSymbol={activePlayer}/>
       </div>
-      LOG
+      <Log/>
     </main>
   );
 }
