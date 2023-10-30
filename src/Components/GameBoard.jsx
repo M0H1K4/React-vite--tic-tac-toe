@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 const initialGameBoard = [
   [null, null, null],
@@ -7,6 +8,15 @@ const initialGameBoard = [
 ];
 
 export default function GameBoard() {
+ const [gameBoard, setGameBoard] = useState(initialGameBoard);
+
+  function handleSelectSquare(rowIndex, colIndex){
+    setGameBoard((prevGameBoard) => {
+      prevGameBoard[rowIndex] [colIndex] = "X";
+      return prevGameBoard;
+    });
+  }
+
   return (
     <ol id="game-board">
       {initialGameBoard.map((row, rowIndex) => (
@@ -14,7 +24,7 @@ export default function GameBoard() {
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
-                <button>{playerSymbol}</button>
+                <button onClick={handleSelectSquare}>{playerSymbol}</button>
               </li>
             ))}
           </ol>
