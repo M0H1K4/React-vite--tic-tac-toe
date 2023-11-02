@@ -401,8 +401,6 @@ ol {
     display: inline-block;
     width: 10rem;
     font-size: 1rem;
-    margin-top: 20px;
-    margin-left: -50px;
     padding: 0.5rem;
     border-radius: 4px;
     text-overflow: ellipsis;
