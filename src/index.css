@@ -550,15 +550,14 @@ ol {
   .player-symbol {
     font-size: 12px;
     position: absolute;
-    margin-left: -40px;
+    margin-left: -80px;
     margin-top: 6px;
   }
 
   #players button {
     width: 4rem;
-    margin-top: -4px;
     color: #c3ba78;
-    margin-left: -100px;
+
   }
 
   .player-name {
@@ -574,13 +573,10 @@ ol {
   .player input {
     font: inherit;
     width: 5rem;
+    margin-left: 0px;
     font-size: 12px;
     border: none;
     padding: 0.5rem;
-    animation: pulse-text 2s infinite;
-    background-color: #46432f;
-    text-align: center;
-    text-transform: uppercase;
   }
 
   #game-board {
