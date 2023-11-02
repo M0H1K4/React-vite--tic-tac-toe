@@ -350,10 +350,7 @@ ol {
   }
 }
 
-@media (max-width:600px) {
-  body {
-    background: red;
-  }
+@media (width < 600px) {
   header img {
     width: 6rem;
   }
