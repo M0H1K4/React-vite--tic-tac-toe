@@ -538,11 +538,6 @@ ol {
 
 
 @media (width <= 400px) {
-  body{
-    background:blue;
-  }
- 
-
   #game-container {
     max-width: 20rem;
     /* margin-left: 15px; */
