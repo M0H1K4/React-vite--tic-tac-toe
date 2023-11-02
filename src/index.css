@@ -1,4 +1,10 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Slab:wght@400;700&display=swap');
+
+
+
+
+
 
 * {
   box-sizing: border-box;
@@ -349,3 +355,14 @@ ol {
     transform: scale(1);
   }
 }
+
+@media  (min-width:375px) {
+  body{
+    background:red;
+  }
+}
+/* @media  (max-width:600px) {
+  body{
+    background:tomato;
+  }
+} */
