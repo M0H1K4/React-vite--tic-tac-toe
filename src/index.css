@@ -75,7 +75,7 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: red;
   animation: pulse 2s infinite ease-in-out;
 }
 
@@ -352,9 +352,6 @@ ol {
 
 @media (width < 675px) {
 
-  body{
-    background:red;
-  }
   header img {
     width: 6rem;
   }
@@ -532,8 +529,89 @@ ol {
     margin: 0;
   }
 }
-/* @media  (max-width:600px) {
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+@media (width <= 400px) {
   body{
-    background:tomato;
+    background:blue;
   }
-} */
+ 
+
+  #game-container {
+    max-width: 20rem;
+    /* margin-left: 15px; */
+  }
+
+  #players li {
+   width: 50%;
+    height: 40px;
+  }
+  .player-symbol {
+    font-size: 12px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 6px;
+  }
+
+  #players button {
+    width: 4rem;
+    margin-top: -4px;
+    color: #c3ba78;
+    margin-left: -100px;
+  }
+
+  .player-name {
+    display: inline-block;
+    width: 15rem;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 12px;
+    margin-left: -100px;
+  }
+
+  .player input {
+    font: inherit;
+    width: 5rem;
+    font-size: 12px;
+    border: none;
+    padding: 0.5rem;
+    animation: pulse-text 2s infinite;
+    background-color: #46432f;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  #game-board ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #game-board button {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: #aca788;
+    color: #3f3b00;
+    font-size: 2rem;
+  }
+
+}
